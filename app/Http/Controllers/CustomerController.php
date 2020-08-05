@@ -1,0 +1,61 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Customers;
+use App\Http\Services\CustomerService;
+use Illuminate\Http\Request;
+
+class CustomerController extends Controller
+{
+    protected $customerService;
+    public function __construct(CustomerService $customerService)
+    {
+        $this->customerService=$customerService;
+    }
+
+    public function index()
+    {
+        //hiển thị danh sách khách hàng
+        $customers = $this->customerService->getAll();
+        return view('customer.index',compact('customers'));
+    }
+
+    public function create()
+    {
+        //Hiển thị form tạo mới khách hàng
+        return view('customer.add');
+    }
+
+    public function store(Request $request)
+    {
+        //Thực hiện thêm mới khách hàng
+        $this->customerService->store($request);
+        toastr()->success('Thêm Mới Thành Công');
+        return redirect()->route('customer.index');
+    }
+
+    public function edit($id)
+    {
+        //Hiển thị form và thông tin khách hàng cần sửa
+        $customer= $this->customerService->findById($id);
+        return view('customer.edit',compact('customer'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        //Thực hiện sửa thông tin khách hàng
+        $customer = $this->customerService->findById($id);
+        $this->customerService->update($customer,$request);
+        toastr()->success('Upload Success!');
+        return redirect()->route('customer.index');
+    }
+
+    public function destroy($id)
+    {
+        //Xóa Khách hàng
+        $customer = $this->customerService->findById($id);
+        $this->customerService->delete($customer);
+        return redirect()->route('customer.index');
+    }
+}
