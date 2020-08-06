@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ae5833f-c308-4fb9-922c-22889a24958a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/demo_manager_customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo_manager_customer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_8_6_20__3_32_PM.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,8 +132,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_manager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -142,6 +143,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -157,12 +159,14 @@
       <workItem from="1596595954843" duration="724000" />
       <workItem from="1596597415953" duration="1785000" />
       <workItem from="1596599216061" duration="15419000" />
-      <workItem from="1596683000995" duration="1753000" />
+      <workItem from="1596683000995" duration="11079000" />
+      <workItem from="1596702101825" duration="624000" />
+      <workItem from="1596702754700" duration="58000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="555" y="184" width="800" height="740" key="#Intentions" timestamp="1596597865129">
@@ -173,26 +177,34 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="599" y="113" width="711" height="827" key="#PHP/0.0.1920.1046@0.0.1920.1046" timestamp="1596599007806" />
+    <state x="555" y="167" width="800" height="718" key="#Plugins" timestamp="1596702812177">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="555" y="167" width="800" height="718" key="#Plugins/0.0.1920.1046@0.0.1920.1046" timestamp="1596702812177" />
     <state x="418" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596599012282">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="418" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596599012282" />
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1596621267503">
+    <state x="643" y="257" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596702169608">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1596621267503" />
+    <state x="643" y="257" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596702169608" />
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1596685949046">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1596685949046" />
     <state x="543" y="258" width="824" height="535" key="IDE.errors.dialog" timestamp="1596601724303">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="543" y="258" width="824" height="535" key="IDE.errors.dialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596601724303" />
-    <state x="617" y="228" width="707" height="596" key="NewPhpClassDialog" timestamp="1596683141198">
+    <state x="617" y="228" width="707" height="596" key="NewPhpClassDialog" timestamp="1596687929566">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="617" y="228" width="707" height="596" key="NewPhpClassDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596683141198" />
-    <state x="1235" y="445" width="399" height="161" key="NewPhpFileDialog" timestamp="1596613332397">
+    <state x="617" y="228" width="707" height="596" key="NewPhpClassDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596687929566" />
+    <state x="1235" y="445" width="399" height="161" key="NewPhpFileDialog" timestamp="1596697879154">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="1235" y="445" width="399" height="161" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596613332397" />
+    <state x="1235" y="445" width="399" height="161" key="NewPhpFileDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596697879154" />
     <state x="441" y="158" width="1037" height="736" key="SettingsEditor" timestamp="1596599198936">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>

@@ -32,6 +32,7 @@ class CustomerService
         $customer->name = $request->name;
         $customer->dob = $request->birthday;
         $customer->email = $request->email;
+        $customer->city_id = $request->city_id;
         $this->customerRepo->save($customer);
     }
 

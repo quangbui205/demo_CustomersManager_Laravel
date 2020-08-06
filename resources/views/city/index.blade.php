@@ -8,6 +8,7 @@
                 <th>STT</th>
                 <th>ID</th>
                 <th>Name</th>
+                <th>Amount</th>
                 <th colspan="2">Edit</th>
             </tr>
             </thead>
@@ -17,6 +18,7 @@
                     <th>{{++$key}}</th>
                     <th>{{$city->id}}</th>
                     <th>{{$city->name}}</th>
+                    <th>{{count($city->customers)}}</th>
                     <th><a href="{{route('city.edit',$city->id)}}">Update</a></th>
                     <th><a onclick="confirm('Are you sure?')" href="{{route('city.delete',$city->id)}}">Delete</a></th>
                 </tr>

@@ -3,15 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Customers;
+use App\Http\Services\CityService;
 use App\Http\Services\CustomerService;
 use Illuminate\Http\Request;
 
 class CustomerController extends Controller
 {
     protected $customerService;
-    public function __construct(CustomerService $customerService)
+    protected $cityService;
+    public function __construct(CustomerService $customerService, CityService $cityService)
     {
         $this->customerService=$customerService;
+        $this->cityService=$cityService;
     }
 
     public function index()
@@ -24,7 +27,8 @@ class CustomerController extends Controller
     public function create()
     {
         //Hiển thị form tạo mới khách hàng
-        return view('customer.add');
+        $cities = $this->cityService->getAll();
+        return view('customer.add',compact('cities'));
     }
 
     public function store(Request $request)
