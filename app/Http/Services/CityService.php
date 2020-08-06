@@ -4,6 +4,7 @@
 namespace App\Http\Services;
 
 
+use App\City;
 use App\Http\Repositories\CityRepository;
 
 class CityService
@@ -17,11 +18,30 @@ class CityService
 
     public function getAll()
     {
-        $this->cityRepo->getAll();
+        return $this->cityRepo->getAll();
     }
 
     public function findbyId($id)
     {
         return $this->cityRepo->findById($id);
+    }
+
+    public function store($request)
+    {
+        $city = new City();
+        $city->id = $request->id;
+        $city->name = $request->name;
+        $this->cityRepo->save($city);
+    }
+
+    public function update($city, $request)
+    {
+        $city->name = $request->name;
+        $this->cityRepo->save($city);
+    }
+
+    public function delete($city)
+    {
+        $this->cityRepo->delete($city);
     }
 }

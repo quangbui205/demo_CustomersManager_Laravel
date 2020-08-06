@@ -24,4 +24,14 @@ class CityRepository
     {
         return $this->city->findOrFail($id);
     }
+
+    public function save($city)
+    {
+        $city->save();
+    }
+
+    public function delete($city)
+    {
+        $city->delete();
+    }
 }
