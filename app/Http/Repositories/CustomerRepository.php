@@ -16,7 +16,7 @@ class CustomerRepository
 
     public function getAll()
     {
-        return $this->customer->all();
+        return $this->customer->paginate(10);
     }
 
     public function save($customer)
