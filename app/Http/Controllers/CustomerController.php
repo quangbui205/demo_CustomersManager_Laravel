@@ -43,7 +43,8 @@ class CustomerController extends Controller
     {
         //Hiển thị form và thông tin khách hàng cần sửa
         $customer= $this->customerService->findById($id);
-        return view('customer.edit',compact('customer'));
+        $cities = $this->cityService->getAll();
+        return view('customer.edit',compact('customer','cities'));
     }
 
     public function update(Request $request, $id)

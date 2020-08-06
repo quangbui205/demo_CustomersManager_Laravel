@@ -10,6 +10,7 @@
                 <th>Name</th>
                 <th>Birthday</th>
                 <th>Email</th>
+                <th>City</th>
                 <th colspan="2">Edit</th>
             </tr>
             </thead>
@@ -21,6 +22,7 @@
                     <th>{{$customer->name}}</th>
                     <th>{{$customer->dob}}</th>
                     <th>{{$customer->email}}</th>
+                    <th>{{$customer->city->name}}</th>
                     <th><a href="{{route('customer.edit',$customer->id)}}">Update</a></th>
                     <th><a onclick="confirm('Are you sure?')" href="{{route('customer.destroy',$customer->id)}}">Delete</a></th>
                 </tr>
