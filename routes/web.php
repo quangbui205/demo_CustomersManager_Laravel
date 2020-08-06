@@ -25,3 +25,11 @@ Route::prefix('customer')->group(function (){
     Route::post('/{id}/update','CustomerController@update')->name('customer.update');
     Route::get('{id}/delete','CustomerController@destroy')->name('customer.destroy');
 });
+Route::prefix('city')->group(function (){
+    Route::get('/','CityController@index')->name('city.index');
+    Route::get('/create','CityController@create')->name('city.create');
+    Route::post('/store','CityController@store')->name('city.store');
+    Route::get('/{id}/edit','CityController@edit')->name('city.edit');
+    Route::post('/{id}/update','CityController@update')->name('city.update');
+    Route::get('/{id}/delete','CityController@destroy')->name('city.delete');
+});
