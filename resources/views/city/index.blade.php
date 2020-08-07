@@ -25,5 +25,12 @@
             @endforeach
             </tbody>
         </table>
+        <div class="col-12">
+            <div class="row">
+                <div class="offset-md-10 col-md-2">
+                    {{ $cities->appends(request()->query())}}
+                </div>
+            </div>
+        </div>
     </div>
 @endsection

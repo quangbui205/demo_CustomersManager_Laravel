@@ -17,7 +17,7 @@ class CityRepository
 
     public function getAll()
     {
-        return $this->city->all();
+        return $this->city->paginate(10);
     }
 
     public function findById($id)

@@ -21,7 +21,8 @@ class CustomerController extends Controller
     {
         //hiển thị danh sách khách hàng
         $customers = $this->customerService->getAll();
-        return view('customer.index',compact('customers'));
+        $cities = $this->cityService->getAll();
+        return view('customer.index',compact('customers','cities'));
     }
 
     public function create()
@@ -62,5 +63,13 @@ class CustomerController extends Controller
         $customer = $this->customerService->findById($id);
         $this->customerService->delete($customer);
         return redirect()->route('customer.index');
+    }
+
+    public function findByCity(Request $request)
+    {
+        $cityId = $request->city_id;
+        $customers = Customers::where('city_id',$cityId)->paginate(10);
+        $cities = $this->cityService->getAll();
+        return view('customer.index',compact('customers','cities'));
     }
 }

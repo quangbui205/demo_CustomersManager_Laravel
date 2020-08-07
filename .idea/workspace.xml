@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ae5833f-c308-4fb9-922c-22889a24958a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Laravel_8_6_20__3_32_PM.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo_manager_customer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo_manager_customer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Repositories/CityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Repositories/CityRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/city/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/city/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/customer/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +140,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CaseStudy-Module3" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
@@ -161,7 +174,9 @@
       <workItem from="1596599216061" duration="15419000" />
       <workItem from="1596683000995" duration="11079000" />
       <workItem from="1596702101825" duration="624000" />
-      <workItem from="1596702754700" duration="58000" />
+      <workItem from="1596702754700" duration="7352000" />
+      <workItem from="1596768458088" duration="4500000" />
+      <workItem from="1596787991515" duration="4584000" />
     </task>
     <servers />
   </component>
@@ -189,10 +204,10 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="643" y="257" width="624" height="538" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1046@0.0.1920.1046" timestamp="1596702169608" />
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1596685949046">
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl" timestamp="1596788559557">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
-    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1596685949046" />
+    <state x="743" y="281" width="424" height="490" key="FileChooserDialogImpl/0.0.1920.1046@0.0.1920.1046" timestamp="1596788559557" />
     <state x="543" y="258" width="824" height="535" key="IDE.errors.dialog" timestamp="1596601724303">
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
@@ -209,5 +224,9 @@
       <screen x="0" y="0" width="1920" height="1046" />
     </state>
     <state x="441" y="158" width="1037" height="736" key="SettingsEditor/0.0.1920.1046@0.0.1920.1046" timestamp="1596599198936" />
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1596705046687">
+      <screen x="0" y="0" width="1920" height="1046" />
+    </state>
+    <state x="623" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1046@0.0.1920.1046" timestamp="1596705046687" />
   </component>
 </project>
