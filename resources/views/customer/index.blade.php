@@ -31,7 +31,7 @@
             </tr>
             </thead>
             <tbody>
-            @foreach($customers as $key => $customer)
+            @forelse($customers as $key => $customer)
                 <tr>
                     <th>{{++$key}}</th>
                     <th>{{$customer->id}}</th>
@@ -42,7 +42,11 @@
                     <th><a href="{{route('customer.edit',$customer->id)}}" ><i class="fa fa-edit btn btn-primary" ></i></a></th>
                     <th><a onclick="confirm('Are you sure?')" href="{{route('customer.destroy',$customer->id)}}"><i class="fa fa-trash btn btn-danger"></i></a></th>
                 </tr>
-            @endforeach
+            @empty
+                <tr>
+                    <th colspan="8">No Data</th>
+                </tr>
+            @endforelse
             </tbody>
         </table>
         <div class="col-12">

@@ -44,4 +44,9 @@ class CityService
     {
         $this->cityRepo->delete($city);
     }
+
+    public function getAllData()
+    {
+        return $this->cityRepo->getAllData();
+    }
 }

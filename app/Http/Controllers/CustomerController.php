@@ -21,7 +21,7 @@ class CustomerController extends Controller
     {
         //hiển thị danh sách khách hàng
         $customers = $this->customerService->getAll();
-        $cities = $this->cityService->getAll();
+        $cities = $this->cityService->getAllData();
         return view('customer.index',compact('customers','cities'));
     }
 
@@ -69,7 +69,7 @@ class CustomerController extends Controller
     {
         $cityId = $request->city_id;
         $customers = Customers::where('city_id',$cityId)->paginate(10);
-        $cities = $this->cityService->getAll();
+        $cities = $this->cityService->getAllData();
         return view('customer.index',compact('customers','cities'));
     }
 }

@@ -34,4 +34,9 @@ class CityRepository
     {
         $city->delete();
     }
+
+    public function getAllData()
+    {
+        return $this->city->all();
+    }
 }
