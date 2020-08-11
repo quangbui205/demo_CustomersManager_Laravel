@@ -31,7 +31,8 @@
                                 @if($customer->city_id==$city->id)
                                 {{"selected"}}
                                 @endif
-                                value="{{$city->id}}">{{$city->name}}</option>
+                                value="{{$city->id}}">{{$city->name}}
+                            </option>
                         @endforeach
                     </select>
                 </div>

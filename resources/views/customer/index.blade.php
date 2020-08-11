@@ -18,6 +18,7 @@
                 </div>
             </div>
         </form>
+
         <table border="1px" class="table">
             <thead>
             <tr>
@@ -56,5 +57,7 @@
                 </div>
             </div>
         </div>
+
+
     </div>
 @endsection

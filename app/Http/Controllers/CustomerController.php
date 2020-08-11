@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Customers;
+use App\Http\Requests\AddCustomerRequest;
 use App\Http\Services\CityService;
 use App\Http\Services\CustomerService;
 use Illuminate\Http\Request;
@@ -32,9 +33,10 @@ class CustomerController extends Controller
         return view('customer.add',compact('cities'));
     }
 
-    public function store(Request $request)
+    public function store(AddCustomerRequest $request)
     {
         //Thực hiện thêm mới khách hàng
+
         $this->customerService->store($request);
         toastr()->success('Thêm Mới Thành Công');
         return redirect()->route('customer.index');
