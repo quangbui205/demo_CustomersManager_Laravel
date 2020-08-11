@@ -36,9 +36,9 @@ class AddCustomerRequest extends FormRequest
         return [
             'name.required' => 'O nay khong duoc de trong!',
             'name.min' => 'Name size must be between 2 and 30!',
-            'dob.required' => 'Ngay sinh sai',
+            'birthday.required' => 'Ngay sinh khong duoc de trong!',
             'email.required' => 'Email not null!',
+            'email.unique' => 'Email da ton tai!',
         ];
-
     }
 }
