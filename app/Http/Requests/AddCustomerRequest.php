@@ -25,8 +25,8 @@ class AddCustomerRequest extends FormRequest
     {
         return [
             'id'=>'required',
-            'name'=>'required|min:5|max:255',
-            'birthday'=>'required',
+            'name'=>'required|min:2|max:255',
+            'birthday'=>'required|date|before:today',
             'email' => 'required|email|unique:customer,email',
         ];
     }

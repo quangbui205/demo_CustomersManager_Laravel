@@ -33,20 +33,22 @@
             </thead>
             <tbody>
             @forelse($customers as $key => $customer)
-                <tr>
-                    <th>{{++$key}}</th>
+                <tr class="list-customer" id="customer-{{$customer->id}}">
+                    <th>{{$key+1}}</th>
                     <th>{{$customer->id}}</th>
                     <th>{{$customer->name}}</th>
                     <th>{{$customer->dob}}</th>
                     <th>{{$customer->email}}</th>
                     <th>{{$customer->city->name}}</th>
                     <th><a href="{{route('customer.edit',$customer->id)}}" ><i class="fa fa-edit btn btn-primary" ></i></a></th>
-                    <th><a onclick="confirm('Are you sure?')" href="{{route('customer.destroy',$customer->id)}}"><i class="fa fa-trash btn btn-danger"></i></a></th>
+                    <th><i class="fa fa-trash btn btn-danger delete-customer"  data-id ="{{$customer->id}}" ></i></th>
                 </tr>
+
             @empty
                 <tr>
                     <th colspan="8">No Data</th>
                 </tr>
+
             @endforelse
             </tbody>
         </table>

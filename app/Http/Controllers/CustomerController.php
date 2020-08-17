@@ -29,7 +29,7 @@ class CustomerController extends Controller
     public function create()
     {
         //Hiển thị form tạo mới khách hàng
-        $cities = $this->cityService->getAll();
+        $cities = $this->cityService->getAllData();
         return view('customer.add',compact('cities'));
     }
 
@@ -64,7 +64,11 @@ class CustomerController extends Controller
         //Xóa Khách hàng
         $customer = $this->customerService->findById($id);
         $this->customerService->delete($customer);
-        return redirect()->route('customer.index');
+        $result = [
+            "status" => 'success',
+            "message" => 'delete success'
+        ];
+        return response()->json($result);
     }
 
     public function findByCity(Request $request)
